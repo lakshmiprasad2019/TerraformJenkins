@@ -5,7 +5,6 @@ resource "aws_instance" "ec2_jenkins" {
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
 
   # key name
-  key_name = "terraform"
 
   user_data = <<EOF
 		#! /bin/bash
